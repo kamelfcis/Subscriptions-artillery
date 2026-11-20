@@ -1,0 +1,198 @@
+{
+  "width": 1012,
+  "height": 638,
+  "duplex": false,
+  "overlay": true,
+  "contentTop": 178,
+  "backSide": {
+    "enabled": false,
+    "background": {
+      "gradient": ["#0d2d54", "#124a7a", "#058b8f"],
+      "imageUrl": null,
+      "dividerY": 80
+    },
+    "title": {
+      "text": "تعليمات العضوية",
+      "xFromRight": 55,
+      "y": 55,
+      "font": "bold 28px Cairo, Arial",
+      "color": "#ffffff"
+    },
+    "fields": {
+      "name": {
+        "show": false,
+        "xFromRight": 55,
+        "y": 140,
+        "font": "bold 34px Cairo, Arial",
+        "color": "#ffffff",
+        "maxWidth": 900,
+        "maxChars": 40
+      },
+      "number": {
+        "show": false,
+        "label": "رقم العضوية",
+        "xFromRight": 55,
+        "labelY": 300,
+        "valueY": 340,
+        "labelFont": "22px Cairo, Arial",
+        "valueFont": "bold 30px Arial",
+        "labelColor": "#d7eefc",
+        "valueColor": "#ffffff"
+      },
+      "rfid": {
+        "show": false,
+        "label": "بطاقة RFID",
+        "xFromRight": 55,
+        "labelY": 300,
+        "valueY": 345,
+        "labelFont": "22px Cairo, Arial",
+        "valueFont": "bold 28px Arial",
+        "labelColor": "#d7eefc",
+        "valueColor": "#ffffff"
+      },
+      "rank": {
+        "show": false,
+        "label": "الرتبة / القرابة",
+        "xFromRight": 55,
+        "labelY": 400,
+        "valueY": 440,
+        "labelFont": "22px Cairo, Arial",
+        "valueFont": "bold 28px Cairo, Arial",
+        "labelColor": "#d7eefc",
+        "valueColor": "#ffffff"
+      }
+    },
+    "lines": [],
+    "logo": {
+      "show": false,
+      "imageUrl": null,
+      "x": 48,
+      "y": 28,
+      "w": 96,
+      "h": 96
+    },
+    "qr": {
+      "showQr": false,
+      "x": 58,
+      "y": 510,
+      "size": 100
+    }
+  },
+  "background": {
+    "gradient": ["#ffffff", "#ffffff", "#ffffff"],
+    "imageUrl": null,
+    "dividerY": 0
+  },
+  "title": {
+    "show": false,
+    "text": "دار ضباط المدفعية",
+    "xFromRight": 55,
+    "y": 65,
+    "font": "bold 32px Cairo, Arial",
+    "color": "#000000"
+  },
+  "subtitle": {
+    "show": false,
+    "text": "",
+    "xFromRight": 55,
+    "y": 107,
+    "font": "23px Cairo, Arial",
+    "color": "#000000"
+  },
+  "rank": {
+    "label": "الرتبـــــــــة",
+    "xFromRight": 52,
+    "y": 276,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640
+  },
+  "name": {
+    "label": "الاســــــــــم",
+    "xFromRight": 52,
+    "y": 340,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640,
+    "maxChars": 40
+  },
+  "relation": {
+    "label": "درجة القرابة",
+    "xFromRight": 52,
+    "y": 372,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640
+  },
+  "job": {
+    "label": "الوظيفـــــة",
+    "xFromRight": 52,
+    "y": 404,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640
+  },
+  "number": {
+    "label": "رقم العضوية",
+    "xFromRight": 52,
+    "y": 404,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640
+  },
+  "expiry": {
+    "label": "ينتهى فى",
+    "xFromRight": 52,
+    "y": 468,
+    "font": "bold 30px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "maxWidth": 640
+  },
+  "signature": {
+    "show": true,
+    "lines": ["مدير دار ضباط المدفعية", "عميد/ أحمد معوض سليمان"],
+    "x": 148,
+    "y": 526,
+    "font": "bold 17px Arial, Tahoma, sans-serif",
+    "color": "#000000",
+    "lineHeight": 26,
+    "align": "center"
+  },
+  "footer": {
+    "show": false,
+    "xFromRight": 60,
+    "y": 568,
+    "font": "22px Cairo, Arial",
+    "color": "#000000"
+  },
+  "photo": {
+    "x": 48,
+    "y": 246,
+    "w": 200,
+    "h": 248,
+    "radius": 2,
+    "inner": { "x": 50, "y": 248, "w": 196, "h": 244, "radius": 0 }
+  },
+  "photoPrimary": {
+    "x": 262,
+    "y": 324,
+    "w": 136,
+    "h": 170,
+    "radius": 2,
+    "inner": { "x": 264, "y": 326, "w": 132, "h": 166, "radius": 0 }
+  },
+  "qr": {
+    "show": false,
+    "x": 58,
+    "y": 510,
+    "size": 20
+  },
+  "logo": {
+    "show": false,
+    "imageUrl": null,
+    "x": 48,
+    "y": 28,
+    "w": 96,
+    "h": 96
+  }
+}

@@ -1,0 +1,1 @@
+module.exports={darkMode:['class'],content:['./index.html','./src/**/*.{js,jsx}'],theme:{extend:{fontFamily:{sans:['Cairo','sans-serif']},colors:{night:'#10182c',ink:'#253553',blue:'#2b63cf',mint:'#17a88b',pale:'#f6f8fc'},boxShadow:{soft:'0 12px 32px rgba(19,39,76,.07)',lift:'0 20px 60px rgba(18,44,88,.14)'},borderRadius:{'2xl':'1.25rem'}}},plugins:[]};

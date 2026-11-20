@@ -1,0 +1,78 @@
+
+> subscriptions-enterprise-api@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: legacy schema remains untouched by additive migration
+ok 1 - legacy schema remains untouched by additive migration
+  ---
+  duration_ms: 2.357797
+  type: 'test'
+  ...
+# Subtest: transactional and idempotent renewal code exists
+ok 2 - transactional and idempotent renewal code exists
+  ---
+  duration_ms: 0.303529
+  type: 'test'
+  ...
+# Subtest: images remain in original SQL Server binary fields
+ok 3 - images remain in original SQL Server binary fields
+  ---
+  duration_ms: 0.598526
+  type: 'test'
+  ...
+# Subtest: money cents never doubles due to binary rounding
+ok 4 - money cents never doubles due to binary rounding
+  ---
+  duration_ms: 4.809005
+  type: 'test'
+  ...
+# Subtest: age boundary at term end
+ok 5 - age boundary at term end
+  ---
+  duration_ms: 0.602991
+  type: 'test'
+  ...
+# Subtest: over-age child blocked unless proof verified through end date
+ok 6 - over-age child blocked unless proof verified through end date
+  ---
+  duration_ms: 0.29564
+  type: 'test'
+  ...
+# Subtest: dependent kinds and unknown classification
+ok 7 - dependent kinds and unknown classification
+  ---
+  duration_ms: 0.582432
+  type: 'test'
+  ...
+# Subtest: overlapping terms detected and touching terms overlap
+ok 8 - overlapping terms detected and touching terms overlap
+  ---
+  duration_ms: 0.515267
+  type: 'test'
+  ...
+# Subtest: shift physical cash expected count handles payments and refunds exactly
+ok 9 - shift physical cash expected count handles payments and refunds exactly
+  ---
+  duration_ms: 0.514129
+  type: 'test'
+  ...
+# Subtest: refund cannot be silently marked complete without evidence and shift
+ok 10 - refund cannot be silently marked complete without evidence and shift
+  ---
+  duration_ms: 1.058092
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 130.954732
+
+> subscriptions-enterprise-api@1.0.0 check
+> node --check src/index.js && node --check src/legacy.js && node --check src/ops.js && node --check src/auth.js && node --check src/db.js && node --check src/renewals.js && node --check src/finance-controls.js
+

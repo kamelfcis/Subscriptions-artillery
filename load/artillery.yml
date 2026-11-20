@@ -1,0 +1,23 @@
+config:
+  target: "http://127.0.0.1:5050"
+  phases:
+    - name: "5 VUs"
+      duration: 10
+      arrivalCount: 5
+    - name: "20 VUs"
+      duration: 10
+      arrivalCount: 20
+  http:
+    timeout: 20
+scenarios:
+  - name: "read endpoints"
+    flow:
+      - get:
+          url: "/api/health"
+      - get:
+          url: "/api/members?page=1&pageSize=10"
+      - get:
+          url: "/api/dashboard"
+# Members and dashboard require the session cookie of a staging test user.
+# Run server/scripts/load-check.mjs to record p95 with a disposable cookie.
+# Do not point this file at the live Subscriptions database.

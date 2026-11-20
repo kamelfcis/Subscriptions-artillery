@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+web/.env.local
+server/.env
+print-agent/bin/
+print-agent/obj/
+deploy/setup needs/src/bin/
+deploy/setup needs/src/obj/
+**/CardPrintAgent.exe
+web/dist/

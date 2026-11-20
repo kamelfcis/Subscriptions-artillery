@@ -1,0 +1,17 @@
+<!-- Legacy sample. Prefer deploy/client-online-install (SubscriptionsAPI + SubscriptionsWeb).
+     NODE_ENV=production marks cookies Secure — use only behind HTTPS. -->
+<service>
+  <id>subscriptions-enterprise-api</id>
+  <name>Subscriptions Enterprise API</name>
+  <description>Node API on 127.0.0.1:5050. Prefer client-online-install SubscriptionsAPI for LAN. Do not grant this identity rights on live Subscriptions without cutover approval.</description>
+  <executable>node</executable>
+  <arguments>src/index.js</arguments>
+  <workingdirectory>%BASE%\..\server</workingdirectory>
+  <env name="NODE_ENV" value="production"/>
+  <log mode="roll-by-size">
+    <sizeThreshold>10240</sizeThreshold>
+    <keepFiles>8</keepFiles>
+  </log>
+  <onfailure action="restart" delay="5 sec"/>
+  <resetfailure>1 hour</resetfailure>
+</service>
